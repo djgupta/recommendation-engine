@@ -1,0 +1,26 @@
+{
+    "file_name": "input.xlsx",
+    "output_file" : "output.xlsx",
+    "user_sheet" : "User Data",
+    "service_sheet" : "Service Provider Data (Basic)",
+    "user_columns" : ["Name", "City", "Industry/Domain", "Niche", "Service Required"],
+    "service_columns" : ["Partner ", "Industry", "Niche"],
+    "user_id_columns" : ["Name", "City"],
+    "service_id_columns" : ["Partner "],
+    "matching_columns" : {"Industry/Domain" : "Industry", "Niche" : "Niche"},
+    "user_additional_columns" : ["Service Required"],
+    "service_additional_columns" : [],
+
+    "threshold_score" : 0.35,
+    "max_recommendation" : 3,
+
+    "regex_delimiter" : "; |, |\\*|\n|/|(|)|\\+",
+
+    "text_matching_threshold" : 90,
+    "one_weight":1,
+    "text_matching_weight" : 0.9,
+    "delimited_weight" : 0.8,
+    "delimited_text_matching_weight" : 0.7,
+    "synonym_weight" : 0.6,
+    "zero_weight":0
+}
